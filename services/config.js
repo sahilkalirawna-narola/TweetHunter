@@ -3,10 +3,7 @@ import axios from 'axios';
 const instance = axios.create({
   baseURL: process.env.NEXT_PUBLIC_BASE_URI,
   headers: {
-     'Cache-Control': 'no-cache',
-     'Content-Type': 'application/json',
-     'Allow-Access-Control-Allow-Origin': '*',
-     'Bearer':process.env.Bearer
+     'Authorization':`Bearer AAAAAAAAAAAAAAAAAAAAALbZaAEAAAAAhIBBjaU4eUNvyu%2FWdLIeSB681cw%3Dl3CTTwhbyfFblJkU0GxPHYQZ6W3pvHT8NruoBy6jfHUI2iiIrE`
   },
 });
 

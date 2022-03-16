@@ -15,12 +15,14 @@ const SearchBar = () => {
 
 	return (
 		<Form
+         style={{maxWidth:'500px'}}
+         className=" w-100"
 			onSubmit={(e) => {
 				e.preventDefault();
 				handleSearch();
 			}}>
-			<Row>
-				<Col xs='8'>
+			<div className="row">
+				<div className="col-10">
 					<Input
 						type='text'
 						name='Search'
@@ -28,13 +30,11 @@ const SearchBar = () => {
 						placeholder='@handle'
 						onChange={(e) => setSearchHandle(e.target.value)}
 					/>
-				</Col>
-				<Col xs='4'>
-					<Button outline color='primary' onClick={handleSearch}>
-						Search
-					</Button>
-				</Col>
-			</Row>
+				</div>
+				<div className="col-2 p-0">
+					<Button outline color='primary' onClick={handleSearch}>Search</Button>
+				</div>
+			</div>
 		</Form>
 	);
 };
